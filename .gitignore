@@ -1,0 +1,14 @@
+# Ignore node_modules folders
+book-store/node_modules/
+server/node_modules/
+
+# Ignore env files
+book-store/.env
+server/.env
+
+
+# # Ignore all node_modules folders in the project
+# **/node_modules/
+
+# # Ignore all .env files in the project
+# **/.env
