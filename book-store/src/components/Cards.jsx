@@ -1,6 +1,6 @@
 import { FaRegEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
-import { FcAbout } from "react-icons/fc";
+// import { FcAbout } from "react-icons/fc";
 import { Link } from "react-router-dom";
 
 export default function Cards({ books }) {
@@ -23,7 +23,7 @@ export default function Cards({ books }) {
               <div className="text-xl mt-2">{book.author}</div>
             </div>
             <div className="flex items-center justify-between">
-              <FcAbout className="size-6" />
+              {/* <FcAbout className="size-6" /> */}
               <Link to={`/edit/${book._id}`}>
                 <FaRegEdit className="size-6 text-green-400" />
               </Link>

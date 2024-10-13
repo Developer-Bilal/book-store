@@ -21,7 +21,7 @@ export default function Create() {
     };
 
     axios
-      .post("http://localhost:5000/books/create", data)
+      .post("/books/create", data)
       .then((res) => {
         console.log("book created!");
         navigate("/");

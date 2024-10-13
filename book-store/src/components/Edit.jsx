@@ -13,7 +13,7 @@ export default function Edit() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/books/${id}`)
+      .get(`/books/${id}`)
       .then((res) => {
         setAuthor(res.data.author);
         setPublishYear(res.data.publishYear);
@@ -35,7 +35,7 @@ export default function Edit() {
     };
 
     axios
-      .put(`http://localhost:5000/books/${id}`, data)
+      .put(`/books/${id}`, data)
       .then((res) => {
         console.log("book edited!");
         navigate("/");

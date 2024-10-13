@@ -11,8 +11,11 @@ const port = process.env.PORT || 5555;
 
 app.use(express.json());
 app.use(cors());
-
 app.use(router);
+
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "Home" });
+});
 
 mongoose
   .connect(process.env.MONGOOSE_URI)

@@ -10,7 +10,7 @@ export default function Delete() {
 
   const handleDelete = () => {
     axios
-      .delete(`http://localhost:5000/books/${id}`)
+      .delete(`/books/${id}`)
       .then(() => {
         navigate("/");
       })
