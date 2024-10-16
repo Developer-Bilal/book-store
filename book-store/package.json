@@ -1,7 +1,7 @@
 {
   "name": "react",
   "version": "1.0.0",
-  "proxy": "book-store-api-iota.vercel.app/",
+  "proxy": "http://localhost:5000/api/v1",
   "description": "",
   "keywords": [],
   "main": "src/index.tsx",

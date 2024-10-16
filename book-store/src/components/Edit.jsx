@@ -35,7 +35,7 @@ export default function Edit() {
     };
 
     axios
-      .put(`/books/${id}`, data)
+      .put(`/books/update/${id}`, data)
       .then((res) => {
         console.log("book edited!");
         navigate("/");
